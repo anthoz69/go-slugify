@@ -1,8 +1,9 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/anthoz69/go-slugify)](https://goreportcard.com/report/github.com/anthoz69/go-slugify)
 [![GoDoc](https://godoc.org/github.com/metal3d/go-slugify?status.svg)](https://godoc.org/github.com/metal3d/go-slugify)
 
 # Slugify
 
-This is a simple package that handle slugify.Marshal() function that returns slugified string. 
+This is a simple package that handle slugify.Marshal() function that returns slugified string.
 The slugification is useful for URL build from accentuated strings.
 
 It replaces accentuated chars to non-accentuated and spaces by minus sign. All other chars (non-alphanumeric) are removed.
