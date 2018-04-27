@@ -34,12 +34,13 @@ var (
 		{re: regexp.MustCompile(`[\xF1]`), ch: "n"},
 	}
 	spacereg       = regexp.MustCompile(`\s+`)
-	noncharreg     = regexp.MustCompile(`[^A-Za-z0-9-]`)
+	noncharreg     = regexp.MustCompile(`[^A-Za-zก-๙0-9-]`)
 	minusrepeatreg = regexp.MustCompile(`\-{2,}`)
 )
 
 // Marshal function returns slugifies string "s"
 func Marshal(s string, lower ...bool) string {
+	s = strings.TrimSpace(s)
 	for _, r := range rExps {
 		s = r.re.ReplaceAllString(s, r.ch)
 	}
