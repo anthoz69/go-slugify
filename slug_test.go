@@ -58,4 +58,9 @@ func TestLowerOptionTH(t *testing.T) {
 	if slug != expected {
 		t.Error("Return string is not slugified as expected", expected, slug)
 	}
+	slug = Marshal(`เมาท์ก่อนหน้าอัลไซเมอร์จัมโบ้เอเซีย เทรลเลอร์ช็อป ปิ้งคอมเพล็กซ์แฟรี่ บลูเบอร์รี`)
+	expected = "เมาท์ก่อนหน้าอัลไซเมอร์จัมโบ้เอเซีย-เทรลเลอร์ช็อป-ปิ้งคอมเพล็กซ์แฟรี่-บลูเบอร์รี"
+	if slug != expected {
+		t.Error("Return string is not slugified as expected", expected, slug)
+	}
 }
