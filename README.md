@@ -14,7 +14,7 @@ It replaces accentuated chars to non-accentuated and spaces by minus sign. All o
 
 ## Installation
 
-    go get -u github.com/anthoz69/go-slugify.git
+    go get -u github.com/anthoz69/go-slugify
 
 ## Usage
 
